@@ -26,15 +26,9 @@ def word_substituter(tweet)
   end
     short_tweet.join(" ")
   end
-             
-# def bulk_tweet_shortener(tweets)
-#   tweets.each do |tweet|
-#     tweet = word_substituter(tweet)
-#     puts "#{tweet}"
-#   end 
-# end
- 
-# def word_substituter(tweet)
+  
+                    # shorter version 
+  # def word_substituter(tweet)
 #   array = tweet.split(" ")
 #   array.each_with_index do |word, index|
 #     dictionary.each do |key, value|
@@ -45,8 +39,17 @@ def word_substituter(tweet)
 #   end
 #   array.join(" ")
 # end
-
+  
+             
+def bulk_tweet_shortener(tweets)
+  tweets.each do |tweet|
+    tweet = word_substituter(tweet)
+    puts "#{tweet}"
+  end 
+end
  
+
+
  def selective_tweet_shortener(tweets)
      if tweets.length > 140
        word_substituter(tweets)
